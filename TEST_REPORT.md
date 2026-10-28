@@ -36,7 +36,8 @@ Run against `tlou-i.exe` and `tlou-i-l.exe` from the install above.
 | 6 | Switch weapons and back | Normal | **Pass** |
 | 7 | Reload with zero total ammo | Full magazine | **Pass** (0 \| ∞ → 8) |
 | 8 | Pistol, revolver, hunting rifle, shotgun | Infinite with reloads | **Pass** (user confirmed all guns) |
-| 9 | Bow, flamethrower | — | **Not tested** (not available in unlocked Encounters) |
+| 9a | Bow | Infinite arrows with normal reloads | **Pass** (tested by the user in-game) |
+| 9b | Flamethrower | — | **Not tested** |
 | 10 | Ellie as playable character | — | **Not tested** (no later save/encounter used) |
 | 11 | Throwables / crafting unchanged | Normal consumption | **Not tested** |
 | 12 | HUD shows ∞ | ∞ for reserve | **Pass** |
