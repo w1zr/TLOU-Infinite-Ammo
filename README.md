@@ -1,6 +1,6 @@
 # The Last of Us Infinite Ammo
 
-**Download:** see [Releases](https://github.com/w1zr/TLOUIM/releases) — get `TLOUInfiniteAmmo-v1.0.0.zip`.
+**Download:** [Nexus Mods](https://www.nexusmods.com/thelastofuspart1/mods/254) or [GitHub Releases](https://github.com/w1zr/TLOUIA/releases) — get `TLOUInfiniteAmmo-v1.0.0.zip`.
 
 Infinite ammo for **The Last of Us Part I** (PC) that keeps normal reloading,
 in the style of the Resident Evil 2 "Infinite Ammo" mod. Works without

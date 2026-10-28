@@ -9,3 +9,10 @@ package/*.zip
 package/fluffy/version.dll
 package/fluffy/TLOUInfiniteAmmo.ini
 package/fluffy/README.md
+
+# Nexus page working files (raw captures can include other windows)
+nexus/raw/
+nexus/contact.png
+nexus/crops.png
+nexus/preview-all.png
+nexus/description.html

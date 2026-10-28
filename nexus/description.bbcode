@@ -1,0 +1,74 @@
+[size=5][b]The Last of Us Infinite Ammo[/b][/size]
+
+Infinite ammo for [b]The Last of Us Part I[/b] that keeps normal reloading — in the style of the Resident Evil 2 "Infinite Ammo" mod. [b]You don't need to finish the game first.[/b]
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]Ammo never runs out.[/b] Your magazine still empties when you fire, and you reload with the original animation, sound and timing.
+[*][b]Every reload is a full magazine[/b], even if you have no ammo at all.
+[*][b]The HUD shows ∞[/b] for reserve ammo, like the official Gameplay Modifier.
+[*][b]Optional No Reload mode[/b] (off by default): your magazine never goes down. [i]Player only[/i] — enemies still reload.
+[*][b]Hotkeys:[/b] [b]F7[/b] toggles infinite ammo, [b]F8[/b] toggles No Reload. The HUD updates on your next shot.
+[*]Works for every gun, including the bow.
+[*]Never touches game files or save files. No third-party loader needed.
+[/list]
+
+[size=4][b]Installation[/b][/size]
+[b]Fluffy Mod Manager (recommended)[/b]
+[list=1]
+[*]Put [i]TLOUInfiniteAmmo-v1.0.0.zip[/i] in [i]Fluffy Mod Manager\Games\TLOU\Mods\[/i].
+[*]Open Fluffy and tick [b]TLOU Infinite Ammo[/b]. Untick it to uninstall.
+[/list]
+
+[b]Manual[/b]
+[list=1]
+[*]Copy [i]version.dll[/i] and [i]TLOUInfiniteAmmo.ini[/i] from the zip into the folder that contains [i]tlou-i.exe[/i]
+(e.g. [i]C:\Program Files (x86)\Steam\steamapps\common\The Last of Us Part I\[/i]).
+[*]To uninstall, delete [i]version.dll[/i], [i]TLOUInfiniteAmmo.ini[/i] and [i]TLOUInfiniteAmmo.log[/i] from that folder.
+[/list]
+Install while the game is closed. [i]modinfo.ini[/i] and [i]screenshot.png[/i] in the zip are only for Fluffy.
+
+[size=4][b]Check that it works[/b][/size]
+After starting the game, [i]TLOUInfiniteAmmo.log[/i] in the game folder ends with [i]active: InfiniteAmmo=1[/i], and your reserve ammo shows ∞.
+
+[size=4][b]Settings[/b][/size] ([i]TLOUInfiniteAmmo.ini[/i])
+[list]
+[*][b]InfiniteAmmo[/b]=1 — infinite ammo with normal reloads
+[*][b]ShowInfinitySign[/b]=1 — show ∞ instead of the reserve count
+[*][b]NoReload[/b]=0 — magazine never goes down (player only)
+[*][b]ToggleInfiniteAmmoKey[/b]=118 (F7), [b]ToggleNoReloadKey[/b]=119 (F8) — 0 disables
+[*][b]BeepOnToggle[/b]=1, [b]Logging[/b]=1
+[/list]
+
+[size=4][b]Compatibility[/b][/size]
+[list]
+[*][b]Tested:[/b] Steam, game version 1.1.4.0.
+[*][b]Not tested:[/b] Epic Games Store.
+[*]If a game update changes the code this mod relies on, it writes the reason to [i]TLOUInfiniteAmmo.log[/i] and [b]turns itself off[/b] instead of guessing.
+[*]Compatible with outfit, texture, audio and other Fluffy asset mods.
+[*][b]Not compatible[/b] with other mods that also install a [i]version.dll[/i] in the game folder.
+[*]Don't combine with other ammo mods, trainers or Cheat Engine ammo tables.
+[/list]
+
+[size=4][b]Tested in-game[/b][/size]
+Pistol, revolver, hunting rifle, shotgun and bow as Joel: firing, emptying and reloading (including from zero ammo), weapon switching, death and checkpoint restart, ∞ HUD, F7/F8, Fluffy install and uninstall.
+[b]Not tested yet:[/b] flamethrower, playing as Ellie, throwables/crafting, story save/load. Reports welcome!
+
+[size=4][b]Known issues[/b][/size]
+[list]
+[*]The HUD only redraws ammo on your next shot after pressing F7/F8.
+[*]F7 and F8 are reserved system-wide while the game runs. Change them in the ini if they clash with another program.
+[/list]
+
+[size=4][b]Troubleshooting[/b][/size]
+[list]
+[*][b]No log file appears:[/b] [i]version.dll[/i] isn't next to [i]tlou-i.exe[/i], or another mod's [i]version.dll[/i] replaced it.
+[*][b]Log says "Mod disabled":[/b] your game version isn't supported yet; the mod stayed off on purpose.
+[*][b]Log says a hotkey is "taken by another program":[/b] pick different keys in the ini.
+[/list]
+
+[size=4][b]Open source[/b][/size]
+Full source code, tests and build instructions: [url=https://github.com/w1zr/TLOUIA]github.com/w1zr/TLOUIA[/url] (MIT license).
+It turns on the game's own infinite-ammo logic (the same code the official modifier uses) and redirects a few checks to flags the mod controls; No Reload is a small player-only hook on the magazine decrement.
+
+[i]Made with the help of AI (Claude by Anthropic). Not affiliated with Naughty Dog or Sony Interactive Entertainment.[/i]
